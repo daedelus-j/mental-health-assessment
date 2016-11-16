@@ -1,0 +1,66 @@
+.action-text {
+  text-align: center;
+  margin: 0 auto 12px;
+}
+
+.answer-btns {
+  width: 33%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.answer-btn {
+  position: relative;
+  font-size: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+  margin-bottom: 1px;
+  transition: background .4s ease-in-out,
+     box-shadow .4s ease-in-out;
+
+  &:first-child {
+    border-radius: 8px 8px 0 0;
+    color: black;
+  }
+
+  &:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+.answer-btn--0 {
+  background: @answer-color-1;
+  &:hover {
+    background: @answer-color-1;
+  }
+}
+
+.answer-btn--1 {
+  background: @answer-color-2;
+  &:hover {
+    background: @answer-color-2;
+  }
+}
+
+.answer-btn--2 {
+  background: @answer-color-3;
+  &:hover {
+    background: @answer-color-3;
+  }
+}
+
+.answer-btn--3 {
+  background: @answer-color-4;
+  &:hover {
+    background: @answer-color-4;
+  }
+}
+
+.answer-btn--transitioning {
+  box-shadow: none;
+  background: @primary-3;
+  &:hover {
+    background: @primary-3;
+  }
+}

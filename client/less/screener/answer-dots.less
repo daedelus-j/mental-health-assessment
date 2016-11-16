@@ -1,0 +1,42 @@
+.answer-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 100em;
+  margin-right: 25px;
+  display: inline-block;
+  transition: background .4s ease-in-out,
+    transform .4s ease-in-out;
+}
+
+.answer-dot--0 {
+  background: @answer-color-1;
+}
+
+.answer-dot--1 {
+  background: @answer-color-2;
+}
+
+.answer-dot--2 {
+  background: @answer-color-3;
+}
+
+.answer-dot--3 {
+  background: @answer-color-4;
+}
+
+.answer-dot--4 {
+  background: @primary-2;
+}
+
+.answer-dot--transitioning {
+  transform: scale(.7);
+}
+
+.answer-dot--first-unanswered {
+  /* This is a BEM no-no, but personally
+     I'm still struggling to find an elegant,
+     less verbose way to combine states */
+  &.answer-dot--transitioning {
+    transform: scale(1.5);
+  }
+}

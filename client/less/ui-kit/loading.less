@@ -1,0 +1,17 @@
+.loading-cont {
+  padding: 10px;
+  min-height: 20px;
+}
+
+.up-down-animation {
+  position: relative;
+  display: inline-block;
+  animation: updown 1s infinite alternate;
+}
+
+@keyframes updown {
+  0% { transform: translateY(0%); }
+  25% { transform: translateY(-50%); }
+  75% { transform: translateY(50%); }
+  100% { transform: translateY(0%); }
+}
